@@ -1,0 +1,149 @@
+$fontFamily: "Roboto";
+$width: 1440px;
+
+.wrap {
+  max-width: $width;
+  background: #ffffff;
+  margin: 0 auto;
+  @media screen and (max-width: 525px) {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0px 0px 32px;
+    position: relative;
+    width: 375px;
+    height: 1529px;
+    background: #ffffff;
+  }
+  .header {
+    max-width: $width;
+    background: #7d7a84;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    @media screen and (max-width: 525px) {
+      width: 375px;
+      background: #512689;
+      flex: none;
+      order: 0;
+      flex-grow: 0;
+    }
+  }
+  .title {
+    font-family: $fontFamily;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 64px;
+    line-height: 75px;
+    color: #ffffff;
+    @media screen and (max-width: 525px) {
+      width: 251px;
+      height: 42px;
+      font-weight: 400;
+      font-size: 36px;
+      line-height: 42px;
+      margin: 0 auto;
+      margin-bottom: 15px;
+    }
+  }
+  .text {
+    width: 846px;
+    height: 46px;
+    margin: 0 auto;
+    font-family: $fontFamily;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 23px;
+    text-align: center;
+    color: #f8f8f8;
+    margin-bottom: 64px;
+    @media screen and (max-width: 855px) {
+      height: 180px;
+      width: 500px;
+      margin-bottom: 10px;
+    }
+    @media screen and (max-width: 525px) {
+      width: 334px;
+      height: 95px;
+      font-size: 16px;
+      line-height: 19px;
+      text-align: center;
+      margin-bottom: 64px;
+    }
+  }
+  .button_no_like {
+    width: 200px;
+    position: relative;
+    display: inline-block;
+    border: 0;
+    color: #777674;
+    font-weight: bold;
+    text-decoration: none;
+    text-shadow: rgba(255, 255, 255, 0.5) 1px 1px,
+      rgba(100, 100, 100, 0.3) 3px 7px 3px;
+    user-select: none;
+    padding: 1em 2em;
+    outline: none;
+    border-radius: 3px / 100%;
+    background-image: linear-gradient(
+        45deg,
+        rgba(255, 255, 255, 0) 30%,
+        rgba(255, 255, 255, 0.8),
+        rgba(255, 255, 255, 0) 70%
+      ),
+      linear-gradient(
+        to right,
+        rgba(255, 255, 255, 1),
+        rgba(255, 255, 255, 0) 20%,
+        rgba(255, 255, 255, 0) 90%,
+        rgba(255, 255, 255, 0.3)
+      ),
+      linear-gradient(
+        to right,
+        rgba(125, 125, 125, 1),
+        rgba(255, 255, 255, 0.9) 45%,
+        rgba(125, 125, 125, 0.5)
+      ),
+      linear-gradient(
+        to right,
+        rgba(125, 125, 125, 1),
+        rgba(255, 255, 255, 0.9) 45%,
+        rgba(125, 125, 125, 0.5)
+      ),
+      linear-gradient(
+        to right,
+        rgba(223, 190, 170, 1),
+        rgba(255, 255, 255, 0.9) 45%,
+        rgba(223, 190, 170, 0.5)
+      ),
+      linear-gradient(
+        to right,
+        rgba(223, 190, 170, 1),
+        rgba(255, 255, 255, 0.9) 45%,
+        rgba(223, 190, 170, 0.5)
+      );
+    background-repeat: no-repeat;
+    background-size: 200% 100%, auto, 100% 2px, 100% 2px, 100% 1px, 100% 1px;
+    background-position: 200% 0, 0 0, 0 0, 0 100%, 0 4px, 0 calc(100% - 4px);
+    box-shadow: rgba(0, 0, 0, 0.5) 3px 10px 10px -10px;
+    background-color: transparent;
+    margin: 25px 0 0;
+  }
+  .button_like {
+    @extend .button_no_like;
+    background-color: #a39db1;
+    color: #f5f9f9;
+  }
+  .content {
+    max-width: 1280px;
+    display: flex;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+    margin: 0 auto;
+    margin-top: 48px;
+    @media screen and (max-width: 525px) {
+      margin-top: 32px;
+    }
+  }
+}
